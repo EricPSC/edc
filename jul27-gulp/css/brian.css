@@ -1,0 +1,27 @@
+.header {
+  background: #25bce9;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 508px;
+  left: 0;
+  width: 20000px;
+  padding: 18px 0 12px 0;
+  margin: 0 0 0 0;
+  content: '';
+}
+
+.social {
+  position: absolute;
+  top: 10px;
+}
+
+.logo img {
+  margin-top: 20px;
+  float: left;
+}
+
+nav li {
+  float: right;
+  display: inline-block;
+}

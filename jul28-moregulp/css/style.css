@@ -1,0 +1,110 @@
+/*put your scss here*/
+main::before, main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bubble, .post, .rightcol {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+aside {
+  width: 200px;
+  float: left;
+}
+
+article {
+  width: calc( 100% - 400px );
+  float: left;
+}
+
+body {
+  background-color: teal;
+}
+
+h1 {
+  color: #00e6e6;
+}
+
+h2 {
+  color: #004d4d;
+}
+
+header {
+  background-image: url(http://digitalrelativity.com/wp-content/uploads/2011/07/clouds.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 40px 20px 20px;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+main {
+  border-top: 1px solid #004d4d;
+}
+
+aside {
+  padding: 0 20px;
+}
+
+article {
+  padding: 0 40px;
+}
+
+footer {
+  background-color: #004d4d;
+  padding: 40px 20px;
+}
+footer h3 {
+  margin: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.post {
+  border-bottom: 2px solid #004d4d;
+  border-top: 2px solid #00e6e6;
+  padding: 40px;
+}
+.post:first-child {
+  border-top: none;
+}
+.post:last-child {
+  border-bottom: none;
+}
+
+.rightcol {
+  border-bottom: 2px solid #004d4d;
+  border-top: 2px solid #00e6e6;
+}
+.rightcol:first-child {
+  border-top: none;
+}
+.rightcol:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,84 @@
+/*put your scss here*/
+
+$main: desaturate(hsl(180, 87%, 28%), 50%);
+$main-light: invert(lighten($main, 10));
+$main-lighter: lighten($main, 20);
+$main-dark: darken($main, 20);
+$main-darker: darken($main-dark, 20);
+$main-comp: complement($main);
+$font-w: 200;
+$hdr-fw: $font-w * 1;
+$font: 11px;
+$hdr: $font * 3;
+$pad: 20px;
+$mar: ($pad * .3333 + $pad);
+
+
+
+body {
+	background-color: $main;
+	font-size: $font;
+	font-weight: $font-w;
+	font-family: sans-serif;
+	color: $main-comp;
+	margin: 0;
+}
+
+h1 {
+	font-size: $hdr;
+	font-weight: $hdr-fw;
+	padding: 0 0 $pad $pad;
+	margin: 0;
+}
+
+header {
+	background-color: $main-lighter;
+	padding: 0 0 $pad $pad;
+	h1 {
+		float: left;
+	}
+	nav {
+		float: right;
+
+	}
+	li {
+		display: inline-block;
+	}
+	&::before,
+	&::after{
+		content:"";
+		display: block;
+		clear: both;
+	}
+}
+main {
+	&::before,
+	&::after {
+		content:"";
+		display: block;
+		clear: both;
+
+	}
+}
+
+article {
+	background-color: $main-light;
+	width: 75%;
+	float: left;
+	h1 {
+		color: $main-dark;
+	}
+}
+aside {
+	background-color: $main-dark;
+	width: 25%;
+	float: right;
+}
+
+footer {
+	background-color: $main-darker;
+	p {
+
+	}
+
+}
