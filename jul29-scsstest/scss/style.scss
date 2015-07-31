@@ -1,0 +1,120 @@
+/*put your scss here*/
+/*
+@import is for importing partial (_*.scss)
+@extend is for inheriting from placeholder (%*){}
+@include is for mixins e.g. @mixin *($x, $y, $z){}
+@function padding-calc($num, $a-num){
+	@return $num + $a-num
+}
+*/
+
+
+
+
+$color-blue: hsla(200, 50%, 60%, 1);
+$color-black: hsla(0, 0%, 8%, 1);
+$color-white: hsla(0, 0%, 92%, 1);
+
+
+@import "placeholder";
+
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	font:{
+		family: Helvetica, sans-serif;
+		size: 20px;
+		weight: 200;
+		style: italic;
+		variant: small-caps;
+	}
+	margin: 0;
+}
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	a {
+		color: $color-black;
+	}
+}
+a {
+	text-decoration: none;
+	color: $color-white;
+}
+h1 {
+	font-size: 24px;
+	line-height: 38px;
+	margin: 0;
+}
+
+header {
+	@extend %clearfix;
+	@extend %background;
+	margin-bottom: 40px;
+}
+
+article {
+	//@extend %background;
+	@include background-mixin(red, purple, 50px);
+	margin: 20px 0;
+}
+.btn {
+	//@extend %button;
+	&.btn-1 {
+		@include button-mixin(16px, 1px);
+}
+	&.btn-2 {
+		@include button-mixin(20px, 2px);
+}
+
+	&.btn-3 {
+		@include button-mixin(24px, 3px);
+}
+	&.btn-4 {
+		@include button-mixin(28px, 4px);
+	   }
+  
+} 
+
+article
+
+
+footer {
+	@extend %background;
+	margin-top: 40px;
+}
+
+nav {
+	a {
+		float: left;
+		color: $color-black;
+	}
+	ul {
+		float: right;
+		li {
+			display: inline-block;
+			line-height: 38px;
+		}
+	}
+}
+
+header, main {
+	padding: 0 10px;
+}	
+
+header  {
+	@extend %clearfix;
+	h1{	
+		@include h1-mixin(red, 25px, center, 1px, blue);
+	}	
+}
+
+footer {
+	@extend %clearfix;
+	h1{
+		@include h1-mixin(blue, 20px, center, 2px, orange);
+	}	
+}

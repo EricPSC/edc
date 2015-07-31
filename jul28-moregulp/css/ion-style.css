@@ -1,0 +1,66 @@
+header {
+  background-color: #fff;
+  color: #555f66;
+  display: block;
+  height: 48px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  line-height: 48px;
+  width: 100%;
+  z-index: 100;
+}
+header::before, header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header h1 a {
+  font-size: 20px;
+  font: inherit;
+  position: absolute;
+  text-decoration: none;
+  color: inherit;
+  top: 0px;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.hero {
+  padding: 144px 0;
+}
+
+.hero {
+  background-color: #666;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.innerHero {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-align: center;
+  color: #666;
+}
+
+.innerHero a {
+  position: relative;
+}

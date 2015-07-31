@@ -1,0 +1,57 @@
+/*Variables, placeholder and imports of partials*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  float: left;
+  margin: 0 auto;
+  padding: 50px 20% 50px 30%;
+  width: 100%;
+  height: 100px;
+  background-color: #180e0b;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 12px;
+  vertical-align: baseline;
+}
+
+.nav {
+  text-align: center;
+  padding: 0 0;
+  margin: 0;
+}
+.nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+.nav li {
+  display: inline-block;
+}
+.nav a {
+  padding-right: 15px;
+}
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 100px;
+  height: 500px;
+}
