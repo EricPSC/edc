@@ -1,0 +1,152 @@
+/*put your scss here*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
+$main-orange: hsla(11, 80%, 57%, 1);
+$main-white: hsla(0, 0%, 95%, 1);
+$main-gray: hsla(0, 0%, 13%, 1);
+
+
+// ============ global scss
+body {font-family: 'Roboto Condensed', sans-serif;}
+
+h1, h2, h3, h4 {text-transform: uppercase;font-weight: 300;}
+
+h1 {font-size: 300%; margin-bottom: 0;}
+
+h2 {font-size: 180%; margin-bottom: 40px;}
+
+h3{font-size: 150%; margin-top: 0;}
+
+h4 {font-size: 120%;}
+
+p {
+	line-height: 1.7;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: underline;
+	color: $main-orange;
+}
+
+.content {
+	padding:{
+		top: 100px;
+		bottom: 25px;
+	}
+}
+
+// ============ button =======
+
+.btn {
+	text-decoration: none;
+	border: none;
+}
+
+.btn-lg {
+	padding: {
+		left: 20px;
+		right: 20px;
+	}
+}
+
+.btn-exmachina {
+	text-transform: uppercase;
+    color: $main-white;
+    background-color: $main-orange;
+    transition: all 250ms ease-in-out;
+    margin-top: 30px;
+    &:hover {
+    	background-color: darken($main-orange, 10);
+    }
+}
+
+//=============== banner
+.hero {
+	height: 350px;
+	background:{
+		image: url("../img/banner.jpg");
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+}
+
+// ==================== list-sty
+
+ul{
+	list-style: none;
+	padding: 0;
+	li {
+		border-bottom: 2px solid hsla(0, 0%, 90%, 1);
+		padding: 15px 0;
+		&::before,
+		&::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		img {
+			float: left;
+			margin-right: 15px;
+		}
+	}
+	li:last-child {
+		border: none;
+	}
+}
+
+#row1 img {
+	width: 100%;
+	height: auto;
+}
+
+.main {
+	background-color: $main-gray;
+	padding: 100px 0 25px;
+
+}
+
+#row3 {
+	.content {
+		padding: 25px;
+		background-color: $main-white;
+	}
+}
+
+#row4 {
+	color: $main-white;
+	li{
+		border-bottom: 2px solid transparentize($main-white, .40);
+	}
+
+	a{
+
+		color: transparentize($main-white, .40);
+		text-decoration: none;	
+	}
+}
+
+blockquote {
+	padding: 20px;
+	height: 331px;
+	color: black;
+	border: none;
+	background-color: $main-white;
+	line-height: 200%;
+}
+
+.p1, .p2 {
+	color: transparentize($main-white, .40);
+	font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px){
+	a.btn {
+		display: block;
+	}
+}
+
+
+

@@ -1,0 +1,140 @@
+/*put your scss here*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 300%;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 180%;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 150%;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 120%;
+}
+
+p {
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: underline;
+  color: #e95a3a;
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+}
+
+.btn-lg {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-exmachina {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  background-color: #e95a3a;
+  transition: all 250ms ease-in-out;
+  margin-top: 30px;
+}
+.btn-exmachina:hover {
+  background-color: #d83b18;
+}
+
+.hero {
+  height: 350px;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  border-bottom: 2px solid #e6e6e6;
+  padding: 15px 0;
+}
+ul li::before, ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul li img {
+  float: left;
+  margin-right: 15px;
+}
+ul li:last-child {
+  border: none;
+}
+
+#row1 img {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  background-color: #212121;
+  padding: 100px 0 25px;
+}
+
+#row3 .content {
+  padding: 25px;
+  background-color: #f2f2f2;
+}
+
+#row4 {
+  color: #f2f2f2;
+}
+#row4 li {
+  border-bottom: 2px solid rgba(242, 242, 242, 0.6);
+}
+#row4 a {
+  color: rgba(242, 242, 242, 0.6);
+  text-decoration: none;
+}
+
+blockquote {
+  padding: 20px;
+  height: 331px;
+  color: black;
+  border: none;
+  background-color: #f2f2f2;
+  line-height: 200%;
+}
+
+.p1, .p2 {
+  color: rgba(242, 242, 242, 0.6);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  a.btn {
+    display: block;
+  }
+}

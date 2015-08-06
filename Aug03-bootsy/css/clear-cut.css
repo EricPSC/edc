@@ -1,0 +1,15 @@
+.jumbotron {
+  height: 440px;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.word {
+  background-color: #ededed;
+}
+
+.bannerbtm {
+  text-align: center;
+}
