@@ -1,0 +1,33 @@
+@import 'variables';
+.container {
+
+	border: 1px solid $mcw;
+	color: transparentize($mcw, .3);
+}
+
+.info{
+		display: flex;
+		flex-direction: column; 
+		h1{
+		
+	}
+	ul{
+		flex: none;
+		width:100%;
+		
+
+		li {
+			list-style: none;
+		a {	
+			text-decoration: none;
+			font-size: 100%;
+			line-height: 1;
+			}
+		}
+		
+	}
+}
+
+
+
+

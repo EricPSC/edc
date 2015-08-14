@@ -1,0 +1,75 @@
+@import "variables";
+
+
+
+main img {
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 260px;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 87%);
+    transition: left 250ms ease-in-out;
+    &:hover {
+		left: 6%;
+	}
+
+}
+
+.container {
+		display: flex;
+		justify-content: center;
+}
+
+
+article {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 90%;
+		height: 70%;
+		
+		background-color: $mcg;
+		padding: 10px 40px ;
+		margin: 0;
+		position: relative;
+}
+
+
+article h1{
+		text-align: center;
+		font-size: 28px;
+		margin-bottom: 0px;
+}
+
+article p {
+		text-indent: 40px;
+		font-size: 14px;
+		line-height: 1.4;
+		margin: 10px 0;
+
+}
+
+article h2 {
+		font-size: 20px;
+		text-align: left;
+		
+}
+
+.work {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $mcg;
+	background-color: $mcg;
+	width: 90%;
+
+	a {
+		font-size: 115%;
+		padding: 5% ;
+		text-decoration: none;
+	}
+}

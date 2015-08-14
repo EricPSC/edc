@@ -1,0 +1,68 @@
+/*put your scss here*/
+
+ul {
+	background-color: pink;
+	// height: 250px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;//main axis
+	//align-items: center;//cross axis
+
+}
+
+
+
+li {
+	display: flex;
+	align-items: center;
+
+	// width: 100px;
+	// height: 100px;
+	margin: 10px 20px;
+	background-color: hsla(200, 50%, 50%, .25);
+	&:first-child{
+		margin-right: auto;
+	}
+}
+
+main{
+	background-color: hsla(300, 50%, 50%, .25);
+	padding: 35px;
+	display: flex;
+}
+
+article {
+	background-color: hsla(80, 50%, 50%, .25);
+	flex: 4;
+	// display: flex;
+	align-items: baseline;
+	*{
+		order: 0;
+		background-color: hsla(0, 50%, 50%, .25);
+	}
+	h1 {
+		order: 2;
+	}
+	blockquote {
+		order: 1;
+	}
+
+}
+
+aside{
+	background-color: hsla(125, 50%, 50%, .25);	
+	flex: 1;
+}
+
+// @media screen and (max-width: 768px) {
+// 	ul {
+// 		flex-direction: column;
+// 		justify-content: center;
+// 		align-items: center;
+// 	}
+	
+// }

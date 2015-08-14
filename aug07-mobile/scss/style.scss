@@ -1,0 +1,66 @@
+/*put your scss here*/
+// ===================== Imports
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+@import "varibles";
+
+
+
+// ============== Universals
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+
+div {
+	display: block;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+// =============== Navigation
+
+.nav.active {
+	background-color: hsla(0, 0%, 10%, 1);
+}
+
+.navbar {
+	margin: 0 0 0 16.6%;
+	padding: 20px;
+	height: 90px;
+	width: 66.6%;
+	position: absolute;
+	top: 35px;
+	vertical-align: middle;
+	border: none;
+	background-color: black;
+}
+
+.navbar-brand  {
+	font-size: 35px;
+}
+
+.dropdown {
+	background-color: hsla(0, 0%, 17%, 1);
+
+
+// =================== Banner
+
+.banner {
+	margin-top: -20px;
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 665px;
+}
+
+.content h2, p {
+	color: hsla(0, 0%, 100%, 1);
+	width: 66.6%;
+	margin-top: 0;
+}
+

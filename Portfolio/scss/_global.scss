@@ -1,0 +1,17 @@
+body, html {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $mcb;
+}
+
+div{
+    width: 100%;
+
+}
+
+br {
+	border: 20px solid transparentize($mcb, .20)
+}
