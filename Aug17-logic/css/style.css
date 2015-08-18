@@ -1,0 +1,153 @@
+/*put your scss here*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  background-color: lightgray;
+  font-size: 20px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+.btn.btn-lg {
+  padding: 20px 40px;
+  font-size: 40px;
+  border-width: 4px;
+  border-radius: 10px;
+}
+.btn.btn-sm {
+  padding: 5px 10px;
+  font-size: 10px;
+  border-width: 1px;
+  border-radius: 2.5px;
+}
+.btn.btn-pill {
+  border-radius: 30px;
+}
+
+/* 
+$section-bg: pink;
+$hue: hue($section-bg); */
+section {
+  background-color: #888;
+  color: #101010;
+  /* background-color: $section-bg;
+  @if $hue >= 0deg and $hue <= 100deg {
+  	color:white;
+  	font-size: $btn-size;
+  }@else if $hue >= 101deg and $hue <= 180deg {
+  	color: yellow;
+  	font-size: $btn-size*2;
+  }@else if $hue >= 181deg and $hue <= 260deg {
+  	color: red;
+  	font-size: $btn-size/2;
+  }@else $hue >= 261deg and $hue <= 360deg {
+  	color: magenta;
+  	font-size: $btn-size+15;
+  } */
+  /* background-color: $section-bg;
+  @if $hue >= 300deg {
+  	color: white;
+  }@else if $hue >= 200deg and $hue <= 300deg{
+  	color: yellow;
+  }@else{
+  	color: black;
+  } */
+  /* font-size: $hue;
+  background-color: $section-bg;
+  @if $section-bg == yellow {
+  	color: black;
+  	font-size: $btn-size * 3;
+  }@else if $section-bg == red {
+  	color: lightgreen;
+  }@else {
+  	color: white;
+  }*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+aside li {
+  line-height: 3;
+  list-style: none;
+  padding-left: 20px;
+  /* for if else if else control directive */
+}
+aside li:nth-of-type(1) {
+  background-color: #d2af79;
+  border-right: 5px solid #bf8c40;
+}
+aside li:nth-of-type(2) {
+  background-color: #c1d279;
+  border-right: 5px solid #a6bf40;
+}
+aside li:nth-of-type(3) {
+  background-color: #8bd279;
+  border-right: 5px solid #59bf40;
+}
+aside li:nth-of-type(4) {
+  background-color: #79d29d;
+  border-right: 5px solid #40bf73;
+}
+aside li:nth-of-type(5) {
+  background-color: #79d2d2;
+  border-right: 5px solid #40bfbf;
+}
+aside li:nth-of-type(6) {
+  background-color: #799dd2;
+  border-right: 5px solid #4073bf;
+}
+aside li:nth-of-type(7) {
+  background-color: #8b79d2;
+  border-right: 5px solid #5940bf;
+}
+aside li:nth-of-type(8) {
+  background-color: #c179d2;
+  border-right: 5px solid #a640bf;
+}
+aside li:nth-of-type(9) {
+  background-color: #d279af;
+  border-right: 5px solid #bf408c;
+}
+aside li:nth-of-type(10) {
+  background-color: #d27979;
+  border-right: 5px solid #bf4040;
+}
+aside li:nth-of-type(11) {
+  background-color: #d2af79;
+  border-right: 5px solid #bf8c40;
+}
+aside li:nth-of-type(12) {
+  background-color: #c1d279;
+  border-right: 5px solid #a6bf40;
+}
+aside li:nth-of-type(13) {
+  background-color: #8bd279;
+  border-right: 5px solid #59bf40;
+}
+aside li:nth-of-type(14) {
+  background-color: #79d29d;
+  border-right: 5px solid #40bf73;
+}
+aside li:nth-of-type(15) {
+  background-color: #79d2d2;
+  border-right: 5px solid #40bfbf;
+}
+aside li:nth-of-type(16) {
+  background-color: #799dd2;
+  border-right: 5px solid #4073bf;
+}
+aside li:nth-of-type(17) {
+  background-color: #8b79d2;
+  border-right: 5px solid #5940bf;
+}
+aside li:nth-of-type(18) {
+  background-color: #c179d2;
+  border-right: 5px solid #a640bf;
+}
+aside li:nth-of-type(19) {
+  background-color: #d279af;
+  border-right: 5px solid #bf408c;
+}

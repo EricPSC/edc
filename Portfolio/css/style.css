@@ -67,9 +67,9 @@ article h1 {
 
 article p {
   text-indent: 40px;
-  font-size: 14px;
-  line-height: 1.4;
-  margin: 10px 0;
+  font-size: 1.25em;
+  line-height: 3.4;
+  margin: 20px;
 }
 
 article h2 {
@@ -114,18 +114,31 @@ article h2 {
           flex-direction: column;
 }
 .info ul {
-  -webkit-flex: none;
-      -ms-flex: none;
-          flex: none;
-  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  margin: 0 0px 0 0px;
 }
 .info ul li {
-  list-style: none;
+  text-align: right;
 }
 .info ul li a {
   text-decoration: none;
   font-size: 100%;
-  line-height: 1;
+  line-height: .5;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
 }
 
 @media screen and (min-width: 591px) and (max-width: 1570px) {
@@ -160,9 +173,9 @@ ul {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -170,7 +183,7 @@ ul {
 }
 ul li {
   list-style: none;
-  padding: 20px 0;
+  padding: 20px 3%;
 }
 ul li a {
   color: #1a9900;

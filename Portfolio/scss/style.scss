@@ -11,12 +11,13 @@
 ul  {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: center; 
     align-items: center;
+
     box-shadow: 1px 1px 1px 1px solid $mcb;
     li{
         list-style: none;
-        padding: 20px 0;
+        padding: 20px 3%;
         a {
             color: $neong;
             font-weight: 500;

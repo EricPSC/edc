@@ -1,0 +1,114 @@
+/*put your scss here*/
+$btn-size: 10px;
+
+
+
+.btn {
+
+	display: inline-block;
+	padding: $btn-size $btn-size*2;
+	border: 1px solid gray;
+	background-color: lightgray;
+	font-size: $btn-size*2;
+	border-width: ($btn-size/5);
+	border-radius: ($btn-size/2);
+	&.btn-lg {
+		$btn-size: $btn-size * 2;
+		padding: $btn-size $btn-size*2;
+		font-size: $btn-size*2;
+		border-width: ($btn-size/5); 
+		border-radius: ($btn-size/2);
+	}
+	&.btn-sm {
+		$btn-size: ($btn-size / 2);
+		padding: $btn-size $btn-size*2;
+		font-size: $btn-size*2;
+		border-width: ($btn-size/5);
+		border-radius: ($btn-size/2);
+	}
+	&.btn-pill {
+
+		border-radius: $btn-size * 3; 
+	}
+}
+
+/* 
+$section-bg: pink;
+$hue: hue($section-bg); */
+
+$section-bg: #888;
+$font-clr: #101010;
+$bg-brightness: lightness($section-bg);
+
+section {
+	background-color: $section-bg;
+	
+	@if $bg-brightness >= 16% and $bg-brightness <= 30% {
+		color: lighten($font-clr, 50);
+	}@else if $bg-brightness <= 15% {
+		color: lighten($font-clr, 75);
+	}@else {
+		color: $font-clr;
+	}
+
+	/* background-color: $section-bg;
+	@if $hue >= 0deg and $hue <= 100deg {
+		color:white;
+		font-size: $btn-size;
+	}@else if $hue >= 101deg and $hue <= 180deg {
+		color: yellow;
+		font-size: $btn-size*2;
+	}@else if $hue >= 181deg and $hue <= 260deg {
+		color: red;
+		font-size: $btn-size/2;
+	}@else $hue >= 261deg and $hue <= 360deg {
+		color: magenta;
+		font-size: $btn-size+15;
+	} */
+
+	/* background-color: $section-bg;
+	@if $hue >= 300deg {
+		color: white;
+	}@else if $hue >= 200deg and $hue <= 300deg{
+		color: yellow;
+	}@else{
+		color: black;
+	} */
+	
+	/* font-size: $hue;
+	background-color: $section-bg;
+	@if $section-bg == yellow {
+		color: black;
+		font-size: $btn-size * 3;
+	}@else if $section-bg == red {
+		color: lightgreen;
+	}@else {
+		color: white;
+	}*/
+} 
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+aside li {
+	line-height: 3;
+	list-style: none;
+	padding-left: 20px;
+
+		/* for if else if else control directive */
+	@for $i from 1 to 20 {
+		$deg: $i * 36;
+		$bg-clr: hsla($deg, 50%, 50%, 1);
+		&:nth-of-type(#{$i}){
+			background-color: lighten($bg-clr, 15);
+			border-right: 5px solid $bg-clr;
+		}
+	}	
+}
+
+
+
+
+
