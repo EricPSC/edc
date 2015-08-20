@@ -1,10 +1,17 @@
-body, html {
+html {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 div {
@@ -13,6 +20,15 @@ div {
 
 br {
   border: 20px solid rgba(0, 0, 0, 0.8);
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#naruto {
+  background-color: black;
 }
 
 main img {
@@ -102,7 +118,7 @@ article h2 {
 
 .mine {
   border: 1px solid white;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .info {
@@ -127,18 +143,21 @@ article h2 {
       -ms-flex-align: start;
           align-items: flex-start;
   list-style: none;
-  margin: 0 0px 0 0px;
+  margin: 0;
+  padding: 0;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
 }
-.info ul li {
-  text-align: right;
-}
-.info ul li a {
+.info ul a {
   text-decoration: none;
   font-size: 100%;
   line-height: .5;
-  -webkit-flex-wrap: no-wrap;
-      -ms-flex-wrap: no-wrap;
-          flex-wrap: no-wrap;
+}
+
+#sushi {
+  background-image: radial-gradient(farthest-side at 55% 45%, #bf4040, rgba(191, 64, 191, 0.7), #70c2c2, #000000);
+  background-attachment: fixed;
 }
 
 @media screen and (min-width: 591px) and (max-width: 1570px) {
@@ -166,7 +185,31 @@ article h2 {
     left: 50px;
   }
 }
-ul {
+@media print {
+  html, footer {
+    background-color: white;
+  }
+  html p, footer p {
+    color: black;
+  }
+
+  .mine {
+    background-color: white;
+    color: black;
+  }
+  .mine i {
+    color: black;
+  }
+
+  header {
+    display: none;
+  }
+
+  a[href]::after {
+    content: none;
+  }
+}
+nav ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -181,23 +224,23 @@ ul {
           align-items: center;
   box-shadow: 1px 1px 1px 1px solid black;
 }
-ul li {
+nav ul li {
   list-style: none;
   padding: 20px 3%;
 }
-ul li a {
+nav ul li a {
   color: #1a9900;
   font-weight: 500;
   font-size: 35px;
 }
-ul li a:hover {
+nav ul li a:hover {
   color: #0b95da;
   text-decoration: none;
 }
-ul li a:active {
+nav ul li a:active {
   color: #f60909;
 }
-ul li a:visited {
+nav ul li a:visited {
   text-decoration: none;
 }
 

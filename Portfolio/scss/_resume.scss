@@ -1,25 +1,14 @@
 @import 'variables';
 .mine {
-
+	
 	border: 1px solid $mcw;
-	color: transparentize($mcw, .3);
+	color: transparentize($mcw, .1);
 }
 
 .info{
 		display: flex;
 		flex-direction: column; 
-		h1{
-		
-	}
-	h2 {
-
-	}
-	h3 {
-
-	}
-	h4 {
-
-	}
+	
 	ul{
 		display: flex;
 
@@ -27,23 +16,25 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		list-style: none;
-		margin:0 0px 0 0px;
-		
-
-		li {
-			text-align: right;
+		margin: 0;
+		padding: 0;
+		flex-wrap: nowrap;
 			
 		a {	
 			text-decoration: none;
 			font-size: 100%;
 			line-height: .5;
-			flex-wrap: no-wrap;
+			
 			}
-		}
+		
 		
 	}
 }
 
 
-
+#sushi {
+	
+	background-image: radial-gradient(farthest-side at 55% 45%, hsla(0, 50%, 50%, 1), hsla(300, 50%, 50%, .70), hsla(180, 40%, 60%, 1), hsla(0, 0%, 0%, 1));
+	background-attachment: fixed;
+}
 

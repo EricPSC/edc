@@ -1,0 +1,25 @@
+/* put your scss answers here */
+
+ol {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+li {
+	@for $i from 1 through 40 {
+			$deg: $i * 9;
+			$bg-clr: hsla($deg, 50%, 50%, 1);
+			&:nth-of-type(#{$i}):hover {
+			background-color: $bg-clr;
+			background-image: none;
+		} 
+		&:nth-of-type(#{$i})::before{
+			content: "#{$i}";
+		}
+	}			
+}
+
+
+

@@ -31,3 +31,35 @@
 		left: 50px;
 	}
 }
+
+
+
+@media print {
+	html, footer{
+		background-color: $mcw;
+		p{
+		color: $mcb;
+		}
+	}
+	.mine {
+		background-color: invert($mcb);
+		color: $mcb;
+		i {
+			color: $mcb;
+		}
+	}
+	header {
+		display: none;
+		
+	}
+	 a[href]::after {
+	    content: none;
+	  }
+}
+
+
+
+
+
+
+

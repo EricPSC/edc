@@ -1,0 +1,111 @@
+/*put your scss here*/
+@import url(http://fonts.googleapis.com/css?family=Orbitron:400,500,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import 'variables';
+@import 'icons';
+$hue: (360 / 8);
+@for $i from 1 through 8{
+	$deg: $i * $hue;
+	$bk-clr: hsla($deg, 40%, 40%, 1);
+	section div:nth-of-type(#{$i}){
+		background-color: $bk-clr;
+	}
+} 
+
+$iconsizes: 2rem 2.2rem 2.5rem 2.8rem 3rem 3.5rem 4rem 4.4rem;
+
+@each $iconsize in $iconsizes {
+	$i: index($iconsizes, $iconsize);
+	section div:nth-of-type(#{$i}){
+		font-size: #{$iconsize};
+	}
+ 
+}
+
+div button.mbtn {
+	margin-top: 8px;
+}
+
+
+
+body {
+	font-family: 'Orbitron', sans-serif;
+}
+
+section div{
+	height: 20vw;
+	width: 29%;
+	margin-top: 25px;
+	
+}
+
+div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 51vw;
+	p {
+		text-indent: 30px;
+	}
+}
+
+/*============== Navagation*/
+.nav{
+	background-color: transparent;
+} 
+
+.btn {
+	margin-top: 0;
+}
+.mine {
+	background-image: url('../img/beast.png'); 
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 50vw;
+	width: 100%;
+	
+		
+}
+	.mine:hover {
+		background-image: url('../img/monstere.png');
+	}
+/* 
+ @keyframes Fade {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+
+.jumbotron {
+	background-position: center;
+	background-size: cover;
+	position:absolute;
+  	left:0;
+	animation-name: Fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+}
+ */
