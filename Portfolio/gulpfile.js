@@ -5,9 +5,9 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	connect = require('gulp-connect');
 
-var htmlSources = ['*.html'],
-	scssSources = ['scss/*.scss'],
-	jsSources = ['js/*.js'];
+var htmlSources = ['*.html'];
+var scssSources = ['scss/*.scss'];
+var jsSources = ['js/*.js'];
 
 gulp.task('html', function(){
 	gulp.src(htmlSources)
@@ -23,7 +23,7 @@ gulp.task('compass', function(){
 		}).on('error', gutil.log))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
-			cascade: true
+			cascade: true	
 		}))
 		.pipe(gulp.dest('css/'))
 		.pipe(connect.reload());
@@ -37,9 +37,9 @@ gulp.task('js', function(){
 
 gulp.task('connect', function(){
 	connect.server({
-		root:'',
+		root: '',
 		livereload: true	
-	});
+	});	
 });
 
 gulp.task('watch', function(){
@@ -48,9 +48,7 @@ gulp.task('watch', function(){
 	gulp.watch(jsSources, ['js']);
 });
 
-
-gulp.task('default', ['watch', 'html', 'compass', 'js', 'connect']);	
-
+gulp.task('default', ['watch', 'html', 'compass', 'js', 'connect']);
 
 
 

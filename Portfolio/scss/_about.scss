@@ -1,7 +1,7 @@
 @import "variables";
 
 #naruto {
-	background-color: $mcb;
+	background-color: $bk-clr;
 }
 
 main img {
@@ -10,9 +10,9 @@ main img {
     position: absolute;
     left: 260px;
     padding: 10px;
-    border: 1px solid hsl(0, 0%, 80%);
-    background-color: hsl(0, 0%, 87%);
-    transition: left 250ms ease-in-out;
+    border: 1px solid hsl(0, 0%, 50%);
+    background-color: hsl(0, 0%, 70%);
+    transition: left 2s ease-in-out;
     &:hover {
 		left: 6%;
 	}
@@ -32,11 +32,13 @@ article {
 		align-items: flex-start;
 		width: 90%;
 		height: 70%;
-		
-		background-color: $mcg;
+		text-shadow: 1px 1px 1px $mcw;
+		background-color: $bk-clr2;
 		padding: 10px 40px ;
 		margin: 0;
 		position: relative;
+		font-weight: 700;
+		
 }
 
 
@@ -65,11 +67,14 @@ article h2 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid $mcg;
-	background-color: $mcg;
+	border: 1px solid $bk-clr2;
+	background-color: $bk-clr2;
 	width: 90%;
 
 	a {
+		color: $mcb;
+		text-shadow: 1px 1px 1px $mcw;
+		font-weight: 700;
 		font-size: 115%;
 		padding: 5% ;
 		text-decoration: none;

@@ -1,11 +1,12 @@
 $mcw: hsla(0, 0%, 100%, 1);
 $mcb: hsla(0, 0%, 0%, 1);
 $mcg: hsla(0, 0%, 60%, 1 );
-$ncp: hsla(273, 30%, 50%, 1);
+$ncg: hsla(103, 80%, 40%, 1);
 $ncb: hsla(200, 90%, 45%, 1);
 $nacr: hsla(360, 93%, 50%, 1);
-$neong: hsla(110, 100%, 30%, 1);
-
+$neonb: hsla(240, 100%, 50%, 1);
+$bk-clr: hsla(546, 73%, 60%, .3);
+$bk-clr2: hsla(240, 90%, 60%, 1);
 %clearfix {
 	&::before,
 	&::after {
@@ -14,6 +15,7 @@ $neong: hsla(110, 100%, 30%, 1);
 		clear: both;
 	}
 }
+
 
 
 
