@@ -1,0 +1,344 @@
+@import url(http://fonts.googleapis.com/css?family=Orbitron:400,500,700);
+html {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+div {
+  width: 100%;
+}
+
+br {
+  border: 20px solid rgba(0, 0, 0, 0.8);
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#naruto {
+  background-color: rgba(79, 213, 227, 0.3);
+}
+
+main img {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  left: 260px;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: #b3b3b3;
+  transition: left 2s ease-in-out;
+}
+main img:hover {
+  left: 6%;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+article {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 90%;
+  height: 70%;
+  text-shadow: 1px 1px 1px white;
+  background-color: #3d3df5;
+  padding: 10px 40px;
+  margin: 0;
+  position: relative;
+  font-weight: 700;
+}
+
+article h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+article p {
+  text-indent: 40px;
+  font-size: 1.25em;
+  line-height: 3.4;
+  margin: 20px;
+}
+
+article h2 {
+  font-size: 20px;
+  text-align: left;
+}
+
+.work {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #3d3df5;
+  background-color: #3d3df5;
+  width: 90%;
+}
+.work a {
+  color: black;
+  text-shadow: 1px 1px 1px white;
+  font-weight: 700;
+  font-size: 115%;
+  padding: 5%;
+  text-decoration: none;
+}
+
+.mine {
+  text-shadow: 2px 2px 2px black;
+  border: 1px solid white;
+  background-color: rgba(153, 153, 153, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.info ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.info ul a {
+  text-decoration: none;
+  font-size: 100%;
+  line-height: .5;
+}
+
+div.resume li:nth-of-type(1) {
+  color: #aabf40;
+}
+
+div.resume li:nth-of-type(2) {
+  color: #40bf6a;
+}
+
+div.resume li:nth-of-type(3) {
+  color: #4080bf;
+}
+
+div.resume li:nth-of-type(4) {
+  color: #9540bf;
+}
+
+div.resume li:nth-of-type(5) {
+  color: #bf4055;
+}
+
+div.resume li:nth-of-type(6) {
+  color: #bfbf40;
+}
+
+#sushi {
+  background-image: radial-gradient(farthest-side at 55% 45%, #80bf40, rgba(230, 26, 43, 0.7), #2e6b6b, #000000);
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 865px) and (max-width: 1570px) {
+  main img {
+    left: 200px;
+    top: 200px;
+    transition: all 1s ease-in-out;
+  }
+  main img:hover {
+    top: 10px;
+  }
+}
+@media screen and (min-width: 526px) and (max-width: 864px) {
+  main img {
+    top: 300px;
+    left: 280px;
+    transition: all 1s ease-in-out;
+  }
+  main img:hover {
+    top: 5px;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 525) {
+  main img {
+    top: 300px;
+    left: 50px;
+  }
+}
+@media print {
+  html, footer {
+    background-color: white;
+  }
+  html p, footer p {
+    color: black;
+  }
+
+  .mine {
+    background-color: white;
+    color: black;
+  }
+  .mine i {
+    color: black;
+  }
+
+  header {
+    display: none;
+  }
+
+  a[href]::after {
+    content: none;
+  }
+}
+nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+nav ul li {
+  list-style: none;
+  padding: 20px 3%;
+}
+nav ul li a {
+  color: blue;
+  font-weight: 500;
+  font-size: 35px;
+  text-shadow: 2px 5px 5px black;
+}
+nav ul li a:hover {
+  color: #0b95da;
+  text-decoration: none;
+}
+nav ul li a:active {
+  color: #f60909;
+}
+nav ul li a:visited {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header h1 {
+  color: #43b814;
+  font-size: 90px;
+  text-shadow: 2px 5px 5px black;
+}
+
+#sick {
+  margin-right: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-image 7s ease-in-out;
+  background-position: center center;
+  background-size: cover;
+}
+
+div.cf6_image-1 {
+  background-image: url("../img/bg-mugs.png");
+}
+
+div.cf6_image-2 {
+  background-image: url("../img/bg-subway.png");
+}
+
+div.cf6_image-3 {
+  background-image: url("../img/bg-beasts.png");
+}
+
+div.cf6_image-4 {
+  background-image: url("../img/bg-monstere.png");
+}
+
+footer {
+  color: black;
+  text-shadow: 2px 2px 2px #999999;
+}
+footer p {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 0;
+  font-size: 12px;
+}
