@@ -100,7 +100,9 @@ section {
 	background-position: center center;
 	height: 50vw;
 	width: 100%;
+	transition: opacity, 3s, ease-in-out;
 	&:hover {
+		transition: opacity, 3s, ease-in-out;
 		background-image: url('../img/monstere.png');
 	}
 	a {
