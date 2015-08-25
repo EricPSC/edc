@@ -2208,14 +2208,17 @@ section div:nth-of-type(5) {
 
 section div:nth-of-type(6) {
   font-size: 3.5rem;
+  font-size: 1.75rem;
 }
 
 section div:nth-of-type(7) {
   font-size: 4rem;
+  font-size: 2rem;
 }
 
 section div:nth-of-type(8) {
   font-size: 4.4rem;
+  font-size: 2.2rem;
 }
 
 div button.mbtn {
@@ -2248,6 +2251,7 @@ div {
 }
 
 section {
+  background-color: rgba(127, 178, 149, 0.6);
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2260,15 +2264,25 @@ section {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 51vw;
+  margin-top: 50vw;
+  background-image: url(../img/nightsky.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 section p {
   text-indent: 30px;
 }
 
 /*============== Navagation*/
-.nav {
-  background-color: transparent;
+.mnav {
+  background-color: rgba(128, 77, 106, 0.6);
+}
+
+.navbar-default .navbar-nav li a {
+  text-shadow: 1px 1px 1px  black;
+  color: rgba(76, 229, 142, 0.6);
 }
 
 .btn {
@@ -2276,45 +2290,33 @@ section p {
 }
 
 .mine {
-  background-image: url("../img/beast.png");
+  background-image: url("../img/beasts.png");
   position: absolute;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 50vw;
   width: 100%;
 }
-
 .mine:hover {
   background-image: url("../img/monstere.png");
 }
-
-/* 
- @keyframes Fade {
-  0% {
-  opacity:1;
+.mine a {
+  text-decoration: none;
+  color: #bf4440;
+  text-shadow: 1px 1px 1px black;
+  font-weight: 700;
 }
-45% {
-opacity:1;
-}
-55% {
-opacity:0;
-}
-100% {
-opacity:0;
-}
+.mine p {
+  text-shadow: 1px 1px 1px white;
+  font-weight: 600;
 }
 
-
-.jumbotron {
-	background-position: center;
-	background-size: cover;
-	position:absolute;
-  	left:0;
-	animation-name: Fade;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-duration: 10s;
-	animation-direction: alternate;
+footer {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
 }
- */
