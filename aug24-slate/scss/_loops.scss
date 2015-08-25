@@ -1,0 +1,8 @@
+$images: 1 2 3;
+
+@each $image in $images{
+	$i: index($images, $image);
+	div.item:nth-of-type(#{$i}){
+		background-image: url('../img/slide-#{$image}.jpg');
+	}
+}

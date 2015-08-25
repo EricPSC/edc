@@ -80,13 +80,13 @@ article {
 
 article h1 {
   text-align: center;
-  font-size: 28px;
+  font-size: 3rem;
   margin-bottom: 0px;
 }
 
 article p {
   text-indent: 40px;
-  font-size: 1.25em;
+  font-size: 1.5rem;
   line-height: 3.4;
   margin: 20px;
 }
@@ -114,18 +114,53 @@ article h2 {
   width: 90%;
 }
 .work a {
+  border: 1px solid rgba(64, 149, 191, 0.8);
+  text-align: center;
   color: black;
   text-shadow: 1px 1px 1px white;
   font-weight: 700;
-  font-size: 115%;
-  padding: 5%;
+  font-size: 1.25rem;
+  padding: 5px 30px;
+  margin: 5%;
   text-decoration: none;
+}
+
+.work a:nth-of-type(1) {
+  background-color: rgba(191, 159, 64, 0.8);
+}
+
+.work a:nth-of-type(2) {
+  background-color: rgba(128, 191, 64, 0.8);
+}
+
+.work a:nth-of-type(3) {
+  background-color: rgba(64, 191, 96, 0.8);
+}
+
+.work a:nth-of-type(4) {
+  background-color: rgba(64, 191, 191, 0.8);
+}
+
+.work a:nth-of-type(5) {
+  background-color: rgba(64, 96, 191, 0.8);
+}
+
+.work a:nth-of-type(6) {
+  background-color: rgba(128, 64, 191, 0.8);
+}
+
+.work a:nth-of-type(7) {
+  background-color: rgba(191, 64, 159, 0.8);
+}
+
+.work a:nth-of-type(8) {
+  background-color: rgba(191, 64, 64, 0.8);
 }
 
 .mine {
   text-shadow: 2px 2px 2px black;
   border: 1px solid white;
-  background-color: rgba(153, 153, 153, 0.3);
+  background-color: rgba(153, 153, 153, 0.4);
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -212,10 +247,14 @@ div.resume li:nth-of-type(6) {
     top: 5px;
   }
 }
-@media screen and (min-width: 100px) and (max-width: 525) {
+@media screen and (min-width: 100px) and (max-width: 525px) {
   main img {
     top: 300px;
-    left: 50px;
+    left: 10px;
+    transition: all 1s ease-in-out;
+  }
+  main img:hover {
+    top: 0;
   }
 }
 @media print {
@@ -246,18 +285,9 @@ nav ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 nav ul li {
   list-style: none;
@@ -266,7 +296,7 @@ nav ul li {
 nav ul li a {
   color: blue;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 2.19rem;
   text-shadow: 2px 5px 5px black;
 }
 nav ul li a:hover {
@@ -280,20 +310,10 @@ nav ul li a:visited {
   text-decoration: none;
 }
 
-header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 header h1 {
+  text-align: center;
   color: #43b814;
-  font-size: 90px;
+  font-size: 5.625rem;
   text-shadow: 2px 5px 5px black;
 }
 
@@ -340,5 +360,5 @@ footer p {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-top: 0;
-  font-size: 12px;
+  font-size: .75rem;
 }

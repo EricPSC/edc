@@ -44,13 +44,13 @@ article {
 
 article h1{
 		text-align: center;
-		font-size: 28px;
+		font-size: 3rem;
 		margin-bottom: 0px;
 }
 
 article p {
 		text-indent: 40px;
-		font-size: 1.25em;
+		font-size: 1.5rem;
 		line-height: 3.4;
 		margin: 20px;
 
@@ -72,11 +72,22 @@ article h2 {
 	width: 90%;
 
 	a {
+		border: 1px solid hsla(200, 50%, 50%, .8);
+		text-align: center;
 		color: $mcb;
 		text-shadow: 1px 1px 1px $mcw;
 		font-weight: 700;
-		font-size: 115%;
-		padding: 5% ;
+		font-size: 1.25rem;
+		padding: 5px 30px;
+		margin: 5%;
 		text-decoration: none;
+	}
+}
+
+@for $i from 1 through 8 {
+	$deg: $i * 45;
+	$back-clr: hsla($deg, 50%, 50%, .8);
+	.work a:nth-of-type(#{$i}){
+		background-color: $back-clr;
 	}
 }

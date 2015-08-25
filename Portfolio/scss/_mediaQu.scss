@@ -26,10 +26,14 @@
 }
 
 
-@media screen and (min-width: 100px) and (max-width: 525){
+@media screen and (min-width: 100px) and (max-width: 525px){
 	main img {
 		top: 300px;
-		left: 50px;
+		left: 10px;
+		transition: all 1s ease-in-out;
+		&:hover {
+			top: 0;
+		}
 	}
 }
 
