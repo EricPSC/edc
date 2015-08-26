@@ -1,9 +1,9 @@
 
 
-@media screen and(min-width: 865px) and (max-width: 1570px){
+@media screen and(min-width: 865px) and (max-width: 1483px){
 	main img {
-			left: 200px;
-			top: 200px;
+			left: 190px;
+			top: 125px;
 			transition: all 1s ease-in-out;
 			&:hover {
 				top: 10px;
@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 526px) and (max-width: 864px){
 	main img {
-		top: 300px;
+		top: 190px;
 		left: 280px;
 		transition: all 1s ease-in-out;
 		&:hover {
@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 100px) and (max-width: 525px){
 	main img {
-		top: 300px;
+		top: 250px;
 		left: 10px;
 		transition: all 1s ease-in-out;
 		&:hover {
