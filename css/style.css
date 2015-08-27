@@ -227,7 +227,7 @@ div.resume li:nth-of-type(6) {
 }
 
 #sushi {
-  background-image: radial-gradient(farthest-side at 55% 45%, #80bf40, rgba(230, 26, 43, 0.7), #2e6b6b, #000000);
+  background-image: linear-gradient(145deg, red 45%, blue 55%);
   background-attachment: fixed;
 }
 
